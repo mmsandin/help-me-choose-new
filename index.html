@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang=en>
   <head>
-    <meta charset =utf-8>
+    <meta charset=utf-8>
     <title>Help me choose</title>
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
@@ -16,17 +16,15 @@
     <div class="resultSection"></div>
     <button>Go!</button>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>
-    $(function() {
-      $('.resultSection').hide()
-
-      var add_option = function (){
-        $('.inputs').append('<input></input>')
-      }
-
-      $('addOption').click(add_option)
-    })
+      $(function() {
+        $('.resultSection').hide()
+        var add_option = function() {
+          $('.inputs').append('<input></input>')
+        }
+        $('.addOption').click(add_option)
+      })
     </script>
   </body>
 </html>
